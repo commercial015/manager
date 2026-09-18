@@ -1,0 +1,14 @@
+SMART KISTI MANAGER v28 — STABLE WINDOWS BUILD
+
+GitHub Actions:
+Actions → Build Windows Installer → Run workflow
+
+সফল হলে Artifacts থেকে:
+Smart-Kisti-Manager-Windows-Setup-v28
+
+Build command:
+npm install
+npm run build -- --publish never
+
+এই workflow GitHub-এ publish করার চেষ্টা করবে না।
+ডেটা Electron userData/data ফোল্ডারে রাখা হয় এবং uninstall-এ app data delete করা বন্ধ রাখা হয়েছে।
